@@ -47,8 +47,8 @@ const config: Config = {
         },
     },
   },
-  plugins: [addVariablesForColors],
-}
-}
+},
+plugins: [addVariablesForColors],
+};
 
 export default config;
