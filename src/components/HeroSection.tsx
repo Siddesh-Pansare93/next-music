@@ -7,7 +7,7 @@ import TypeWritterEffect from './TypeWritterEffect';
 
 function HeroSection() {
   return (
-    <div className='h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-10'>
+    <div className='min-h-screen md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-10'>
       {/* h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 */}
       <Spotlight />
       <div className=' p-4 w-full relative text-center '>
@@ -26,7 +26,6 @@ function HeroSection() {
         >
           Explore courses
         </Button>
- 
         </Link>
       </div>
     </div>

@@ -23,7 +23,7 @@ function TypeWritterEffect() {
       ];
   return (
 
-    <TypewriterEffectSmooth words={words} className=' text-xl sm:text-4xl' />
+    <TypewriterEffectSmooth words={words} className=' text-lg' />
   )
 }
 

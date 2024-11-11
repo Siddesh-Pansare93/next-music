@@ -23,7 +23,7 @@ export default function FeaturedCards() {
   const featuredCourses = coursesData.courses.filter((course: Course) => course.isFeatured)
 
   return (
-    <div className="px-8 bg-gray-900 min-w-full">
+    <div className="px-8 bg-gray-900 min-w-full  ">
       <div className="text-center py-12 ">
         <h1 className="text-teal-600 text-semibold tracking-wide text-xl uppercase">FEATURED COURSES</h1>
         <p className="mt-6 text-2xl text-white md:text-3xl tracking-tight font-extrabold leading-8 uppercase">
@@ -31,11 +31,12 @@ export default function FeaturedCards() {
         </p>
       </div>
 
+
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 justify-center p-4">
 
         {featuredCourses.map(course => (
           <div key={course.id}>
-            <BackgroundGradient className="rounded-[22px]  p-4 sm:p-10 bg-white dark:bg-zinc-900">
+            <BackgroundGradient className="rounded-[22px]  p-4 sm:p-10 bg-white dark:bg-zinc-900 min-h-80">
               <div className="flex flex-col justify-center items-center flex-grow">
                 <h1 className="text-lg sm:text-xl mb-4 mt-2 text-black dark:text-neutral-200 font-semibold">
                   {course.title}
@@ -43,12 +44,14 @@ export default function FeaturedCards() {
                 <p className="text-lg sm:text-xl mb-4 mt-2 text-black dark:text-neutral-200 ">
                   {course.description}
                 </p>
+                <div className="w-full mt-3 absolute bottom-8 ml-10">
                 <Link
                   href={`/course/:${course.slug}`}
-                  className="bg-white text-black"
+                  className="bg-blue-400 text-black rounded-lg p-2 mt-4"
                   >
                   See More
                 </Link>
+                </div>
               </div>
             </BackgroundGradient>
           </div>
