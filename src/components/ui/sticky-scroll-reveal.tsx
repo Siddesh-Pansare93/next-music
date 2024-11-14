@@ -46,9 +46,10 @@ export const StickyScroll = ({
     "var(--neutral-900)",
   ];
   const linearGradients = [
-    "https://videos.pexels.com/video-files/7513671/7513671-sd_640_360_24fps.mp4",
-    "https://images.pexels.com/photos/258805/pexels-photo-258805.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/164879/pexels-photo-164879.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/185030/pexels-photo-185030.jpeg?auto=compress&cs=tinysrgb&w=600",
     "https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/347700/pexels-photo-347700.jpeg?auto=compress&cs=tinysrgb&w=600"
   ];
 
   const [backgroundGradient, setBackgroundGradient] = useState(
@@ -67,7 +68,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="sm:h-[30rem] h-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -102,9 +103,13 @@ export const StickyScroll = ({
         </div>
       </div>
       <div
-        style={{ backgroundImage: `url(${backgroundGradient})` }}
+      
+        style={{ 
+            backgroundImage: `url(${backgroundGradient})` ,
+            backgroundSize: "cover",
+        }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-60 w-80 rounded-3xl bg-white sticky top-10 overflow-hidden shadow-2xl",
           contentClassName
         )}
       >
