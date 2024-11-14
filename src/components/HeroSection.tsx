@@ -12,8 +12,8 @@ function HeroSection() {
       <Spotlight />
       <div className=' p-4 w-full relative text-center '>
         <div className="flex justify-center items-center">
-          {/* <TypeWritterEffect/> */}
-          <h1>Master the Art Of Music</h1>
+          <TypeWritterEffect/>
+          {/* <h1>Master the Art Of Music</h1> */}
         </div >
         <p className=' mt-10 mx-auto max-w-lg text-base   '>
           Dive into our comprehensive music courses and transform your musical journey today. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.

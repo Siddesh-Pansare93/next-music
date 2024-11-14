@@ -32,19 +32,20 @@ export default function FeaturedCards() {
       </div>
 
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 justify-center p-4">
+    <div className="mx-8 mt-10">
+      <div className="grid lg:grid-cols-4 grid-cols-1  gap-10 justify-center p-4">
 
         {featuredCourses.map(course => (
           <div key={course.id}>
             <BackgroundGradient className="rounded-[22px]  p-4 sm:p-10 bg-white dark:bg-zinc-900 min-h-80">
-              <div className="flex flex-col justify-center items-center flex-grow">
-                <h1 className="text-lg sm:text-xl mb-4 mt-2 text-black dark:text-neutral-200 font-semibold">
+              <div className="flex flex-col justify-center items-center  py-0">
+                <h1 className="text-lg sm:text-2xl mb-4 mt-2 text-black dark:text-neutral-200 font-semibold">
                   {course.title}
                 </h1>
-                <p className="text-lg sm:text-xl mb-4 mt-2 text-black dark:text-neutral-200 ">
+                <p className="text-lg sm:text-base mb-4 mt-2 text-black dark:text-gray-300  ">
                   {course.description}
                 </p>
-                <div className="w-full mt-3 absolute bottom-8 ml-10">
+                <div className="w-full mt-3 ml-2 ">
                 <Link
                   href={`/course/:${course.slug}`}
                   className="bg-blue-400 text-black rounded-lg p-2 mt-4"
@@ -57,6 +58,7 @@ export default function FeaturedCards() {
           </div>
         ))}
 
+      </div>
       </div>
 
 
