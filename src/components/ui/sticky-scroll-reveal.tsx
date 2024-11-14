@@ -43,7 +43,7 @@ export const StickyScroll = ({
   const backgroundColors = [
     "var(--slate-900)",
     "var(--black)",
-    "var(--neutral-900)",
+    // "var(--neutral-900)",
   ];
   const linearGradients = [
     "https://images.pexels.com/photos/164879/pexels-photo-164879.jpeg?auto=compress&cs=tinysrgb&w=600",
