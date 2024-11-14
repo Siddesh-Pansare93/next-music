@@ -3,8 +3,7 @@ import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 import coursesData from '../data/music-courses.json'
 import Link from "next/link";
-import { Interface } from "readline";
-
+import Card from "./Card";
 
 interface Course {
   id: number;
@@ -23,7 +22,7 @@ export default function FeaturedCards() {
   const featuredCourses = coursesData.courses.filter((course: Course) => course.isFeatured)
 
   return (
-    <div className="px-8 bg-gray-900 min-w-full  ">
+    <div className="px-8 bg-[#050505] min-w-full  ">
       <div className="text-center py-12 ">
         <h1 className="text-teal-600 text-semibold tracking-wide text-xl uppercase">FEATURED COURSES</h1>
         <p className="mt-6 text-2xl text-white md:text-3xl tracking-tight font-extrabold leading-8 uppercase">
@@ -33,11 +32,14 @@ export default function FeaturedCards() {
 
 
     <div className="mx-8 mt-10">
-      <div className="grid lg:grid-cols-4 grid-cols-1  gap-10 justify-center p-4 ">
+      <div className="grid lg:grid-cols-3 grid-cols-1  gap-10 justify-center p-4 ">
 
         {featuredCourses.map(course => (
           <div key={course.id} className="flex justify-center">
-            <BackgroundGradient className="rounded-[22px]  p-4 sm:p-10 bg-white dark:bg-zinc-900 h-full ">
+
+          {<Card cardDetails={course}/>}
+
+            {/* <BackgroundGradient className="rounded-[22px]  p-4 sm:p-10 bg-white dark:bg-zinc-900 h-full ">
               <div className="flex flex-col text-center item-center  py-0 ">
                 <h1 className="text-lg sm:text-2xl mb-4 mt-2 text-black dark:text-neutral-200 font-semibold">
                   {course.title}
@@ -54,7 +56,7 @@ export default function FeaturedCards() {
                 </Link>
                 </div>
               </div>
-            </BackgroundGradient>
+            </BackgroundGradient> */}
           </div>
         ))}
 
@@ -63,7 +65,7 @@ export default function FeaturedCards() {
 
 
 
-      <div className="text-center">
+      <div className="text-center mt-16">
         <Link href={"/"}>
 
 
