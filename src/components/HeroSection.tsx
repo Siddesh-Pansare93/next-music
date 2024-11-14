@@ -4,16 +4,20 @@ import { Spotlight } from './ui/Spotlight'
 import Link from 'next/link'
 import { Button } from './ui/moving-border'
 import TypeWritterEffect from './TypeWritterEffect';
+import { useMediaQuery } from 'react-responsive';
 
 function HeroSection() {
+
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   return (
     <div className='min-h-screen md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-10'>
       {/* h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 */}
       <Spotlight />
       <div className=' p-4 w-full relative text-center '>
         <div className="flex justify-center items-center">
-          <TypeWritterEffect/>
-          {/* <h1>Master the Art Of Music</h1> */}
+          {!isMobile && <TypeWritterEffect/>}
+          {isMobile && <h1 className='text-4xl font-semibold'>Master the Art of <span className='text-teal-500'>Music</span></h1>}
         </div >
         <p className=' mt-10 mx-auto max-w-lg text-base   '>
           Dive into our comprehensive music courses and transform your musical journey today. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.
