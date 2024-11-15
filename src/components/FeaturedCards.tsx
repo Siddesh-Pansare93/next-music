@@ -22,7 +22,7 @@ export default function FeaturedCards() {
   const featuredCourses = coursesData.courses.filter((course: Course) => course.isFeatured)
 
   return (
-    <div className="px-8 bg-[#050505] min-w-full  ">
+    <div className="px-8 bg-[#131313] min-w-full  ">
       <div className="text-center py-12 ">
         <h1 className="text-teal-600 text-semibold tracking-wide text-xl uppercase">FEATURED COURSES</h1>
         <p className="mt-6 text-2xl text-white md:text-3xl tracking-tight font-extrabold leading-8 uppercase">
