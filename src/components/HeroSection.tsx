@@ -17,7 +17,7 @@ function HeroSection() {
       <div className=' p-4 w-full relative text-center '>
         <div className="flex justify-center items-center">
           {!isMobile && <TypeWritterEffect/>}
-          {isMobile && <h1 className='text-4xl font-semibold'>Master the Art of <span className='text-teal-500'>Music</span></h1>}
+          {isMobile && <h1 className='text-4xl font-semibold'>Master the Art of <span className="text-teal-500">Music</span></h1>}
         </div >
         <p className=' mt-10 mx-auto max-w-lg text-base   '>
           Dive into our comprehensive music courses and transform your musical journey today. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.
