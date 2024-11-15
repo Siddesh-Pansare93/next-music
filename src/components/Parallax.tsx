@@ -3,7 +3,11 @@ import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 
 export function HeroParallaxDemo() {
-  return <HeroParallax products={products} />;
+  return (
+    <div className="mb-20">
+      <HeroParallax products={products} />
+    </div>
+  )
 }
 export const products = [
   {
@@ -19,7 +23,7 @@ export const products = [
   {
     title: "Drum Academy",
     link: "https://thedrumacademy.com",
-    thumbnail:"https://images.pexels.com/photos/237464/pexels-photo-237464.jpeg?auto=compress&cs=tinysrgb&w=600",
+    thumbnail: "https://images.pexels.com/photos/237464/pexels-photo-237464.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     title: "Vocal Harmony",
