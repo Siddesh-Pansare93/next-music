@@ -109,7 +109,7 @@ export const Header = () => {
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
                 Discover your musical potential with expert instructors and state-of-the-art facilities.
-                Whether you're a beginner or a seasoned musician, we offer a wide range of courses
+                Whether you are a beginner or a seasoned musician, we offer a wide range of courses
                 to help you grow your talent and passion for music.
             </p>
         </div>

@@ -59,7 +59,7 @@ export const StickyScroll = ({
   useEffect(() => {
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
     console.log(backgroundGradient)
-  }, [activeCard]);
+  }, [activeCard,backgroundGradient,linearGradients]);
 
   
 
