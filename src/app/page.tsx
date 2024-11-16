@@ -4,7 +4,7 @@ import FeaturedCards from "@/components/FeaturedCards"
 import { HeroParallaxDemo } from "@/components/Parallax";
 import { useMediaQuery } from "react-responsive";
 import { StickyScrollComponent } from "@/components/WhyToChooseUs";
-
+import { TestimonialsCard } from "@/components/InfiniteMovingCards";
 
 export default function Home() {
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
@@ -15,6 +15,7 @@ export default function Home() {
          {isMobile ? <HeroSection /> :  <HeroParallaxDemo />}
         <FeaturedCards />
         <StickyScrollComponent/>
+        <TestimonialsCard/>
       </div>
 
 
