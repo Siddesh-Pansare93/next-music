@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import { StickyScrollComponent } from "@/components/WhyToChooseUs";
 import { TestimonialsCard } from "@/components/testimonialsCard";
 import UpcomingWebinars from "@/components/UpcomingWebinars";
+import MeetOurTutors from "@/components/MeetOurTutors";
 
 export default function Home() {
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
@@ -18,6 +19,7 @@ export default function Home() {
         <StickyScrollComponent/>
         <TestimonialsCard/>
         <UpcomingWebinars/>
+        <MeetOurTutors/>
       </div>
 
 

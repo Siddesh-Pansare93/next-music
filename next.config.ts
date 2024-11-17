@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
 
 module.exports = {
   images: {
-    domains: ['images.pexels.com'], // Add any domains from which you are loading images
+    domains: ['images.pexels.com' , 'images.unsplash.com'], 
   },
 };
 
